@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "chat-icon-api",
+  "version": "${version}",
+  "name": "Chat icons API",
+  "description": "API for mods to create icons at the start of chat messages",
+  "authors": [
+    "Tom_The_Geek"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/chat-icon-api/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "me.geek.tom.chaticons.ChatIcons"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "chat-icon-api.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*"
+  }
+}
